@@ -233,8 +233,15 @@
     background: linear-gradient(135deg, var(--navy), var(--navy-mid));
     border-radius:12px; color: var(--white);
   }
-  .contact p { font-size:13.5px; color:rgba(255,255,255,.65); margin-bottom:4px; }
-  .contact .cta { font-size:16px; font-weight:700; color: var(--gold); }
+  .contact p { font-size:13.5px; color:rgba(255,255,255,.65); margin-bottom:12px; }
+  .contact .cta {
+    display: inline-block;
+    font-size:15px; font-weight:700; color: var(--navy);
+    background: var(--gold); padding: 12px 28px;
+    border-radius: 8px; text-decoration: none;
+    transition: background .2s, transform .2s;
+  }
+  .contact .cta:hover { background: var(--gold-light); transform: translateY(-2px); }
 
   @media(max-width:700px){
     .header h1{font-size:26px;}
@@ -480,7 +487,9 @@
 
   <div class="contact">
     <p>¿Tienes dudas sobre qué paquete necesitas?</p>
-    <div class="cta">Unete al WhatsApp: https://chat.whatsapp.com/DCbQhRzCaJ29w0x8nAqjDR</div>
+    <a class="cta" href="https://chat.whatsapp.com/DCbQhRzCaJ29w0x8nAqjDR" target="_blank" rel="noopener noreferrer">
+      Únete al grupo de WhatsApp
+    </a>
   </div>
 
 </div>
